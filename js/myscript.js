@@ -53,7 +53,6 @@ if (mailAccepted == true){
     document.getElementById("mail-result").innerHTML="mail valida"
 }else{
     document.getElementById("mail-result").innerHTML="mail non valida"
-
 }
 
 
