@@ -59,9 +59,13 @@ btnLogin.addEventListener("click",
         }
         if(contatore == 1 ){
             document.getElementById("mail-result").innerHTML="mail valida";
+            document.getElementById("mail-result").classList.add("text-success")
+            
             
         }else{
             document.getElementById("mail-result").innerHTML="mail non valida";
+            document.getElementById("mail-result").classList.add("text-danger")
+
         }
     }
 );    
