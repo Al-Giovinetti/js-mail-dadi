@@ -11,10 +11,10 @@ btnDie.addEventListener("click",
         pResult=0
 
         //Creo 2 variabili - 1 per il dado del computer e uno per quello dell' utente
-        let computerDie = parseInt(Math.random() * (6 - 1 + 1) + 1);
+        let computerDie = Math.floor(Math.random() * (6 - 1 + 1) + 1);
         document.getElementById("computer-die").innerHTML= parseInt(computerDie)
 
-        let userDie = parseInt(Math.random() * (6 - 1 + 1) + 1);
+        let userDie = Math.floor(Math.random() * (6 - 1 + 1) + 1);
         document.getElementById("user-die").innerHTML= parseInt(userDie)
 
         // chi ha il numero più alto vince
@@ -45,7 +45,7 @@ btnLogin.addEventListener("click",
         let inputMail
         let contatore=0
 
-        for(index = 0; index < mailArrey.length;index++){
+        for(index = 0; index < mailArrey.length ;index++){
 
              inputMail = document.getElementById("email-ok");
 
@@ -63,7 +63,6 @@ btnLogin.addEventListener("click",
             document.getElementById("mail-result").innerHTML="mail non valida";
             inputMail.value=""
             document.getElementById("mail-result").classList.add("text-danger")
-
         }
     }
 );    
